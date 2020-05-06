@@ -45,7 +45,7 @@ usage()
 static int
 date_to_time_t(const char *date_rep, time_t *tval)
 {
-	static const char format[] = "%d-%m-%Y"; 
+	static const char format[] = "%d-%m-%Y";
 	struct tm convert;
 
 	memset(&convert, 0, sizeof(struct tm));
