@@ -12,3 +12,6 @@ ${PROG}: ${OBJS}
 
 clean:
 	rm -f ${PROG} ${OBJS}
+
+install: ${PROG}
+	install -m 0700 ${PROG} ~/bin
